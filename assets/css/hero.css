@@ -1,0 +1,25 @@
+.getstarted :hover {
+  background-color: rgb(239, 246, 255);
+}
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: -400px;
+  width: 100%;
+  height: 600px; /* Match viewBox height for best aspect */
+  display: block;
+  z-index: -1;
+  /* transform: rotate(180deg); */
+  transform: scaleY(-1);
+}
+.explore .arrowright {
+  transition: transform 0.3s ease;
+}
+
+.explore:hover .arrowright {
+  transform: translateX(5px);
+}
+.getstarted :hover {
+  background-color: rgb(28, 57, 142);
+  cursor: pointer;
+}

@@ -16,7 +16,6 @@ p:hover {
   cursor: pointer;
 }
 
-
 p::after {
   content: "";
   position: absolute;
