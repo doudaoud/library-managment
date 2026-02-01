@@ -5,4 +5,4 @@ function sendHomePage(res , element ) {
   res.status(200).send( "<!DOCTYPE html>" + html);
 }
 
-module.exports =  sendHomePage ;
+module.exports =  sendHomePage 

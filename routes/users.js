@@ -13,4 +13,4 @@ userRoute.get(
   }),
 );
 
-module.exports = userRoute;
+module.exports = userRoute
