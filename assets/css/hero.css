@@ -23,3 +23,29 @@
   background-color: rgb(28, 57, 142);
   cursor: pointer;
 }
+
+/* Card Styles for Hero2 */
+.card {
+  border: 1px solid rgb(243, 244, 246);
+  border-radius: 10px;
+  background-color: white;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy smooth transition */
+  position: relative; /* Context */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Stronger shadow like image */
+  background-color: rgb(253, 250, 255);
+  border-color: rgb(233, 212, 255);
+  z-index: 100 !important; /* Ensure it stays on top */
+  cursor: pointer;
+}
+
+.card .icon {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+  transform: scale(1.1);
+}

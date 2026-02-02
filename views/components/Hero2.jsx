@@ -7,7 +7,7 @@ import {
   Clock,
   Shield,
 } from "lucide-react";
-export default function Hero2() {
+export default function Hero2(props) {
   return (
     <>
       <div
@@ -22,6 +22,7 @@ export default function Hero2() {
           justifyContent: "center",
         }}
       >
+        <link rel="stylesheet" href="/css/hero.css" />
         <div
           className="titles"
           style={{
@@ -57,9 +58,8 @@ export default function Hero2() {
             width: "80%",
             display: "grid",
             gridTemplateColumns: "1fr 1fr 1fr",
-         
-            marginRight: "100px",
-            gap: 20,
+            marginRight: "140px",
+            gap: 30,
           }}
         >
           <div
@@ -71,10 +71,8 @@ export default function Hero2() {
               flexFlow: "column wrap",
               paddingLeft: "30px",
               // paddingTop: 50,
-          justifyContent: "center",
+              justifyContent: "center",
               gap: 15,
-              border: "1px solid rgb(243, 244, 246)",
-              borderRadius: "10px"
             }}
           >
             <div
@@ -113,326 +111,6 @@ export default function Hero2() {
                 color: "rgb(74, 85, 101)",
                 lineHeight: "28px",
                 width: "80%",
-              }}
-            >
-              Efficiently organize and catalog your entire library collection
-              with advanced metadata and categorization.
-            </p>
-            <div
-              style={{
-                width: "20%",
-                height: "3px",
-                backgroundImage:
-                  "linear-gradient(to right, rgb(154, 19, 251) , white)",
-              }}
-            >
-              {/* ce dive doit etre vide pour faire la ligner de carte   parfait cette idee elle marche bien */}
-            </div>
-          </div>
-          <div
-            className="card"
-            style={{
-              width: "382px",
-              height: "250px",
-              display: "flex",
-              flexFlow: "column wrap",
-              paddingLeft: "20px",
-              paddingTop: 50,
-              gap: 15,
-              border: "1px solid black",
-            }}
-          >
-            <div
-              className="icon"
-              style={{
-                height: "56px",
-                width: "56px",
-                borderRadius: "10px",
-                backgroundImage:
-                  "linear-gradient(to bottom , rgb(37, 118, 255) , rgb(27, 104, 255))",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <BookMarked
-                color={"white"}
-                size={30}
-                style={{
-                  margin: "auto",
-                }}
-              />
-            </div>
-
-            <h3
-              style={{
-                color: "rgb(28, 57, 157)",
-              }}
-            >
-              Book Management
-            </h3>
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "sans-serif",
-                color: "rgb(74, 85, 101)",
-                lineHeight: "28px",
-              }}
-            >
-              Efficiently organize and catalog your entire library collection
-              with advanced metadata and categorization.
-            </p>
-            <div
-              style={{
-                width: "20%",
-                height: "3px",
-                backgroundImage:
-                  "linear-gradient(to right, rgb(154, 19, 251) , white)",
-              }}
-            >
-              {/* ce dive doit etre vide pour faire la ligner de carte   parfait cette idee elle marche bien */}
-            </div>
-          </div>
-          <div
-            className="card"
-            style={{
-              width: "382px",
-              height: "250px",
-              display: "flex",
-              flexFlow: "column wrap",
-              paddingLeft: "20px",
-              paddingTop: 50,
-              gap: 15,
-              border: "1px solid black",
-            }}
-          >
-            <div
-              className="icon"
-              style={{
-                height: "56px",
-                width: "56px",
-                borderRadius: "10px",
-                backgroundImage:
-                  "linear-gradient(to bottom , rgb(37, 118, 255) , rgb(27, 104, 255))",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <BookMarked
-                color={"white"}
-                size={30}
-                style={{
-                  margin: "auto",
-                }}
-              />
-            </div>
-
-            <h3
-              style={{
-                color: "rgb(28, 57, 157)",
-              }}
-            >
-              Book Management
-            </h3>
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "sans-serif",
-                color: "rgb(74, 85, 101)",
-                lineHeight: "28px",
-              }}
-            >
-              Efficiently organize and catalog your entire library collection
-              with advanced metadata and categorization.
-            </p>
-            <div
-              style={{
-                width: "20%",
-                height: "3px",
-                backgroundImage:
-                  "linear-gradient(to right, rgb(154, 19, 251) , white)",
-              }}
-            >
-              {/* ce dive doit etre vide pour faire la ligner de carte   parfait cette idee elle marche bien */}
-            </div>
-          </div>
-          <div
-            className="card"
-            style={{
-              width: "382px",
-              height: "250px",
-              display: "flex",
-              flexFlow: "column wrap",
-              paddingLeft: "20px",
-              paddingTop: 50,
-              gap: 15,
-              border: "1px solid black",
-            }}
-          >
-            <div
-              className="icon"
-              style={{
-                height: "56px",
-                width: "56px",
-                borderRadius: "10px",
-                backgroundImage:
-                  "linear-gradient(to bottom , rgb(37, 118, 255) , rgb(27, 104, 255))",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <BookMarked
-                color={"white"}
-                size={30}
-                style={{
-                  margin: "auto",
-                }}
-              />
-            </div>
-
-            <h3
-              style={{
-                color: "rgb(28, 57, 157)",
-              }}
-            >
-              Book Management
-            </h3>
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "sans-serif",
-                color: "rgb(74, 85, 101)",
-                lineHeight: "28px",
-              }}
-            >
-              Efficiently organize and catalog your entire library collection
-              with advanced metadata and categorization.
-            </p>
-            <div
-              style={{
-                width: "20%",
-                height: "3px",
-                backgroundImage:
-                  "linear-gradient(to right, rgb(154, 19, 251) , white)",
-              }}
-            >
-              {/* ce dive doit etre vide pour faire la ligner de carte   parfait cette idee elle marche bien */}
-            </div>
-          </div>
-          <div
-            className="card"
-            style={{
-              width: "382px",
-              height: "250px",
-              display: "flex",
-              flexFlow: "column wrap",
-              paddingLeft: "20px",
-              paddingTop: 50,
-              gap: 15,
-              border: "1px solid black",
-            }}
-          >
-            <div
-              className="icon"
-              style={{
-                height: "56px",
-                width: "56px",
-                borderRadius: "10px",
-                backgroundImage:
-                  "linear-gradient(to bottom , rgb(37, 118, 255) , rgb(27, 104, 255))",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <BookMarked
-                color={"white"}
-                size={30}
-                style={{
-                  margin: "auto",
-                }}
-              />
-            </div>
-
-            <h3
-              style={{
-                color: "rgb(28, 57, 157)",
-              }}
-            >
-              Book Management
-            </h3>
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "sans-serif",
-                color: "rgb(74, 85, 101)",
-                lineHeight: "28px",
-              }}
-            >
-              Efficiently organize and catalog your entire library collection
-              with advanced metadata and categorization.
-            </p>
-            <div
-              style={{
-                width: "20%",
-                height: "3px",
-                backgroundImage:
-                  "linear-gradient(to right, rgb(154, 19, 251) , white)",
-              }}
-            >
-              {/* ce dive doit etre vide pour faire la ligner de carte   parfait cette idee elle marche bien */}
-            </div>
-          </div>
-          <div
-            className="card"
-            style={{
-              width: "382px",
-              height: "250px",
-              display: "flex",
-              flexFlow: "column wrap",
-              paddingLeft: "20px",
-              paddingTop: 50,
-              gap: 15,
-              border: "1px solid black",
-            }}
-          >
-            <div
-              className="icon"
-              style={{
-                height: "56px",
-                width: "56px",
-                borderRadius: "10px",
-                backgroundImage:
-                  "linear-gradient(to bottom , rgb(37, 118, 255) , rgb(27, 104, 255))",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
-              <BookMarked
-                color={"white"}
-                size={30}
-                style={{
-                  margin: "auto",
-                }}
-              />
-            </div>
-
-            <h3
-              style={{
-                color: "rgb(28, 57, 157)",
-              }}
-            >
-              Book Management
-            </h3>
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "sans-serif",
-                color: "rgb(74, 85, 101)",
-                lineHeight: "28px",
               }}
             >
               Efficiently organize and catalog your entire library collection
