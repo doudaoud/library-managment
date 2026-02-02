@@ -7,6 +7,7 @@ import {
   Clock,
   Shield,
 } from "lucide-react";
+import Card from "./Card";
 export default function Hero2(props) {
   return (
     <>
@@ -62,32 +63,11 @@ export default function Hero2(props) {
             gap: 30,
           }}
         >
-          <div
-            className="card"
-            style={{
-              width: "382px",
-              height: "314px",
-              display: "flex",
-              flexFlow: "column wrap",
-              paddingLeft: "30px",
-              // paddingTop: 50,
-              justifyContent: "center",
-              gap: 15,
-            }}
-          >
-            <div
-              className="icon"
-              style={{
-                height: "56px",
-                width: "56px",
-                borderRadius: "10px",
-                backgroundImage:
-                  "linear-gradient(to bottom , rgb(37, 118, 255) , rgb(27, 104, 255))",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            >
+          <Card
+            title="Book Management"
+            text="Efficiently organize and catalog your entire library collection
+              with advanced metadata and categorization."
+            icon={
               <BookMarked
                 color={"white"}
                 size={30}
@@ -95,38 +75,13 @@ export default function Hero2(props) {
                   margin: "auto",
                 }}
               />
-            </div>
-
-            <h3
-              style={{
-                color: "rgb(28, 57, 157)",
-              }}
-            >
-              Book Management
-            </h3>
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "sans-serif",
-                color: "rgb(74, 85, 101)",
-                lineHeight: "28px",
-                width: "80%",
-              }}
-            >
-              Efficiently organize and catalog your entire library collection
-              with advanced metadata and categorization.
-            </p>
-            <div
-              style={{
-                width: "20%",
-                height: "3px",
-                backgroundImage:
-                  "linear-gradient(to right, rgb(154, 19, 251) , white)",
-              }}
-            >
-              {/* ce dive doit etre vide pour faire la ligner de carte   parfait cette idee elle marche bien */}
-            </div>
-          </div>
+            }
+          />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </>
