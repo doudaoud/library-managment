@@ -35,13 +35,6 @@ export default function Card(props) {
             alignContent: "center",
           }}
         >
-          {/* <BookMarked
-                color={"white"}
-                size={30}
-                style={{
-                  margin: "auto",
-                }}
-              /> */}
           {props.icon}
         </div>
 
@@ -51,7 +44,6 @@ export default function Card(props) {
           }}
         >
           {props.title}
-          {/* Book Management */}
         </h3>
         <p
           style={{
@@ -62,8 +54,6 @@ export default function Card(props) {
             width: "80%",
           }}
         >
-          {/* Efficiently organize and catalog your entire library collection
-              with advanced metadata and categorization. */}
           {props.text}
         </p>
         <div
