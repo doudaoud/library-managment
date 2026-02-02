@@ -63,7 +63,7 @@ export default function Card(props) {
             backgroundImage:
               "linear-gradient(to right, rgb(154, 19, 251) , white)",
           }}
-        >
+        >  
           {/* ce dive doit etre vide pour faire la ligner de carte   parfait cette idee elle marche bien */}
         </div>
       </div>
