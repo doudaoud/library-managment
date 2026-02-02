@@ -8,7 +8,9 @@ import {
   Shield,
 } from "lucide-react";
 import Card from "./Card";
-export default function Hero2(props) {
+
+export default function Hero2() {
+  // const rgb = (r, g, b) => `rgb(${r}, ${g}, ${b})`;
   return (
     <>
       <div
@@ -76,9 +78,39 @@ export default function Hero2(props) {
                 }}
               />
             }
+            color1={"rgb(37, 118, 255)"}
+            color2={"rgb(27, 104, 255)"}
           />
-          <Card />
-          <Card />
+          <Card
+            title="Automated Borrowing"
+            text="Streamline lending and return processes with automatic notifications and due date tracking."
+            icon={
+              <Users
+                size={30}
+                color={"white"}
+                style={{
+                  margin: "auto",
+                }}
+              />
+            }
+            color1={"rgb(167, 59, 255)"}
+            color2={"rgb(157, 37, 253)"}
+          />
+          <Card
+            title="Member Management"
+            text=" Maintain comprehensive member profiles with borrowing history and personalized recommendations. "
+            icon={
+              <BarChart3
+                size={30}
+                color={"white"}
+                style={{
+                  margin: "auto",
+                }}
+              />
+            }
+            color1={"rgb(93, 87, 255)"}
+            color2={" rgb(114, 100, 248)"}
+          />
           <Card />
           <Card />
           <Card />
