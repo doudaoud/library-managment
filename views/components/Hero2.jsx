@@ -85,7 +85,7 @@ export default function Hero2() {
             title="Automated Borrowing"
             text="Streamline lending and return processes with automatic notifications and due date tracking."
             icon={
-              <Users
+              <Clock
                 size={30}
                 color={"white"}
                 style={{
@@ -100,7 +100,7 @@ export default function Hero2() {
             title="Member Management"
             text=" Maintain comprehensive member profiles with borrowing history and personalized recommendations. "
             icon={
-              <BarChart3
+              <Users
                 size={30}
                 color={"white"}
                 style={{
@@ -111,9 +111,51 @@ export default function Hero2() {
             color1={"rgb(93, 87, 255)"}
             color2={" rgb(114, 100, 248)"}
           />
-          <Card />
-          <Card />
-          <Card />
+          <Card
+            title="Smart Search"
+            text="Find books instantly with intelligent search filters by title, author, category, and more."
+            icon={
+              <Search
+                size={30}
+                color={"white"}
+                style={{
+                  margin: "auto",
+                }}
+              />
+            }
+            color1={" rgb(138, 72, 255) "}
+            color2={" rgb(131, 51, 255)"}
+          />
+          <Card
+            title="Analytics & Reports"
+            text="Gain insights with comprehensive dashboards tracking circulation, popular books, and member trends."
+            icon={
+              <BarChart3
+                size={30}
+                color={"white"}
+                style={{
+                  margin: "auto",
+                }}
+              />
+            }
+            color1={"rgb(242, 38, 144)"}
+            color2={"rgb(234, 5, 128)"}
+          />
+          <Card
+            title="Security & Privacy"
+            text="Enterprise-grade security with encrypted data storage and compliance with privacy regulations."
+            icon={
+              <Shield
+                size={30}
+                color={"white"}
+                style={{
+                  margin: "auto",
+                }}
+              />
+            }
+            color1={"rgb(0, 179, 119)"}
+            color2={"rgb(0, 162, 108)"}
+          />
         </div>
       </div>
     </>
