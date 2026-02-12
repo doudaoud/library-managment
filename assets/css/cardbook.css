@@ -103,3 +103,20 @@
 .star-container {
   margin-top: 5px;
 }
+
+/* Category Badge */
+.category-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #8b20ed;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}

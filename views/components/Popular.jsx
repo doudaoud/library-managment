@@ -8,24 +8,28 @@ export default function Popular() {
       author: "F. Scott Fitzgerald",
       image:
         "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=800&auto=format&fit=crop",
+      category: "Classic",
     },
     {
       title: "To Kill a Mockingbird",
       author: "Harper Lee",
       image:
         "https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=800&auto=format&fit=crop",
+      category: "Classic",
     },
     {
       title: "1984",
       author: "George Orwell",
       image:
         "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop",
+      category: "Dystopian",
     },
     {
       title: "Pride and Prejudice",
       author: "Jane Austen",
       image:
         "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?q=80&w=800&auto=format&fit=crop",
+      category: "Romance",
     },
   ];
 
@@ -50,6 +54,7 @@ export default function Popular() {
               title={book.title}
               author={book.author}
               image={book.image}
+              category={book.category}
             />
           ))}
         </div>

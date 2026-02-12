@@ -8,6 +8,9 @@ export default function CardBook(props) {
       <link rel="stylesheet" href="/css/cardbook.css" />
       <div className="cardbook">
         <div className="img">
+          {props.category && (
+            <span className="category-badge">{props.category}</span>
+          )}
           <img
             src={
               props.image ||
