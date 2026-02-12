@@ -1,3 +1,8 @@
+const fs = require("fs");
+if (require.extensions) {
+  require.extensions[".css"] = () => null;
+}
+
 const express = require("express");
 import React from "react";
 const mongoose = require("mongoose");
