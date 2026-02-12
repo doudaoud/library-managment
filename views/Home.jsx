@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Bynumber from "./components/Bynumber";
 export default function Home() {
   return (
-    <>
+    <div style={{ width: "100%", maxWidth: "100vw", overflowX: "hidden" }}>
       <Navbar />
       <Hero />
       {/*debut de header 2  */}
@@ -18,6 +18,6 @@ export default function Home() {
       <Explore />
       <Bynumber />
       <Footer />
-    </>
+    </div>
   );
 }

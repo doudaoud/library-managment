@@ -4,7 +4,7 @@ import React from "react";
 export default function Hero() {
   return (
     <>
-      <link rel="stylesheet" href="css/hero.css" />
+      <link rel="stylesheet" href="/css/hero.css" />
       <div
         style={{
           backgroundImage:
@@ -209,11 +209,13 @@ export default function Hero() {
             <img
               src="public/hero-books-tech.png"
               style={{
-                width: "100%",
-                maxWidth: "600px",
+                // width: "100%",
+                width : 700 , 
+                maxWidth: "750px",
                 height: "auto",
-                maxHeight: "590px",
+                maxHeight: "750px",
                 borderRadius: "20px",
+                
                 objectFit: "cover",
               }}
             />

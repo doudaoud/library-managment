@@ -30,8 +30,9 @@ export default function Hero2() {
           className="titles"
           style={{
             width: "90%",
-            maxWidth: "1200px",
-            margin: "auto",
+            maxWidth: "800px",
+            margin: "0 auto",
+            textAlign: "center",
           }}
         >
           <h1
@@ -41,7 +42,6 @@ export default function Hero2() {
               fontWeight: "900",
               fontSize: "clamp(32px, 4vw, 50px)",
               marginBottom: "20px",
-              textAlign: "center",
             }}
           >
             Powerful Features
@@ -50,7 +50,7 @@ export default function Hero2() {
             style={{
               color: "rgb(74, 85, 101)",
               fontSize: "clamp(16px, 2vw, 18px)",
-              textAlign: "center",
+              lineHeight: "1.6",
               maxWidth: "700px",
               margin: "0 auto",
             }}

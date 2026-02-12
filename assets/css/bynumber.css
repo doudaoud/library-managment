@@ -18,7 +18,10 @@
   flex-direction: column;
   gap: 16px;
   margin-bottom: 64px;
-  max-width: 672px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .bynumber-header h2 {
@@ -27,14 +30,12 @@
   font-weight: 700;
   color: #1e3a8a; /* blue-900 */
   margin: 0;
-  text-align: center;
 }
 
 .bynumber-header p {
   font-size: clamp(16px, 2vw, 18px);
   color: #4b5563; /* gray-600 */
   margin: 0;
-  text-align: center;
 }
 
 /* Grid */
@@ -225,20 +226,20 @@
   .bynumber-container {
     padding: 0 15px;
   }
-  
+
   .bynumber-header {
     margin-bottom: 48px;
   }
-  
+
   .stat-card {
     padding: 24px;
   }
-  
+
   .stat-icon {
     width: 40px;
     height: 40px;
   }
-  
+
   .stat-icon svg {
     width: 24px;
     height: 24px;
@@ -249,25 +250,25 @@
   .bynumber-section {
     padding: 60px 0;
   }
-  
+
   .stats-grid {
     gap: 24px;
   }
-  
+
   .stat-card {
     padding: 20px;
     gap: 16px;
   }
-  
+
   .stat-content {
     gap: 12px;
   }
-  
+
   .info-section {
     margin-top: 48px;
     padding: 24px;
   }
-  
+
   .info-grid {
     gap: 24px;
   }
@@ -277,41 +278,41 @@
   .bynumber-section {
     padding: 40px 0;
   }
-  
+
   .bynumber-container {
     padding: 0 15px;
   }
-  
+
   .bynumber-header {
     margin-bottom: 32px;
   }
-  
+
   .stats-grid {
     grid-template-columns: 1fr !important;
     gap: 20px;
   }
-  
+
   .stat-card {
     padding: 16px;
   }
-  
+
   .info-grid {
     grid-template-columns: 1fr !important;
     gap: 20px;
   }
-  
+
   .info-section {
     padding: 20px;
   }
-  
+
   .info-title {
     font-size: 16px;
   }
-  
+
   .info-text {
     font-size: 14px;
   }
-  
+
   .stat-description {
     font-size: 13px;
   }

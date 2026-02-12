@@ -5,10 +5,16 @@
   /* background-color: #fbfcff; */
 }
 
+@media (min-width: 1400px) {
+  .popular-section {
+    padding: 100px 80px 50px 80px;
+  }
+}
+
 .popular-section .top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 50px;
   flex-wrap: wrap;
   gap: 20px;
@@ -60,19 +66,19 @@
   .popular-section {
     padding: 80px 4% 40px 4%;
   }
-  
+
   .popular-section .top {
     flex-direction: column;
     text-align: center;
     gap: 30px;
   }
-  
+
   .popular-section h1,
   .popular-section p {
     min-width: unset;
     text-align: center;
   }
-  
+
   .view-all-btn {
     margin-top: 15px;
   }
@@ -82,7 +88,7 @@
   .popular-section {
     padding: 60px 3% 30px 3%;
   }
-  
+
   .popular-section .books {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -93,12 +99,12 @@
   .popular-section {
     padding: 40px 15px 20px 15px;
   }
-  
+
   .popular-section .books {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .view-all-btn {
     width: 100%;
     max-width: 250px;

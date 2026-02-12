@@ -11,6 +11,13 @@
   gap: 50px;
 }
 
+@media (min-width: 1400px) {
+  .explore-container {
+    padding: 80px;
+    width: 85%;
+  }
+}
+
 .explore-container .content {
   flex: 1;
 }
@@ -66,13 +73,13 @@
     padding: 40px 30px;
     gap: 30px;
   }
-  
+
   .explore-container p {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
   }
-  
+
   .explore-container .image img {
     max-width: 80%;
     height: auto;
@@ -85,7 +92,7 @@
     width: 95%;
     margin: 30px auto;
   }
-  
+
   .explore-btn {
     width: 100%;
     max-width: 250px;
@@ -99,7 +106,7 @@
     padding: 25px 15px;
     border-radius: 15px;
   }
-  
+
   .explore-container .image img {
     max-width: 100%;
   }
