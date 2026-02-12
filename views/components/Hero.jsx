@@ -209,13 +209,12 @@ export default function Hero() {
             <img
               src="public/hero-books-tech.png"
               style={{
-                // width: "100%",
-                width : 700 , 
-                maxWidth: "750px",
+                maxWidth: "700px",
+                maxHeight: "700px",
+                minWidth: "450px",
                 height: "auto",
-                maxHeight: "750px",
+                minHeight: "450px",
                 borderRadius: "20px",
-                
                 objectFit: "cover",
               }}
             />
