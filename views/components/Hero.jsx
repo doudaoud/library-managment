@@ -16,12 +16,14 @@ export default function Hero() {
           className="header"
           style={{
             display: "flex",
-            width: "80%",
-            marginTop: "158px",
+            width: "90%",
+            maxWidth: "1200px",
+            marginTop: "100px",
             marginLeft: "auto",
             marginRight: "auto",
-            gap: "100px",
+            gap: "60px",
             marginBottom: "100px",
+            flexDirection: "row",
           }}
         >
           <div
@@ -50,10 +52,10 @@ export default function Hero() {
             </button>
             <h1
               style={{
-                fontSize: 60,
+                fontSize: "clamp(36px, 5vw, 60px)",
                 fontWeight: "900",
                 fontFamily: "sans-serif",
-                lineHeight: "85px",
+                lineHeight: "1.2",
                 color: "rgb(28, 57, 142)",
                 marginBottom: "15px",
               }}
@@ -76,9 +78,9 @@ export default function Hero() {
             </h1>
             <p
               style={{
-                lineHeight: "30px",
+                lineHeight: "1.6",
                 color: "rgb(74, 85, 101)",
-                fontSize: 18,
+                fontSize: "clamp(16px, 2vw, 18px)",
                 marginBottom: "45px",
               }}
             >
@@ -132,18 +134,21 @@ export default function Hero() {
             </button>
             <hr />
             <div
-              className=""
+              className="stats-container"
               style={{
                 display: "flex",
                 justifyContent: "space-around",
                 marginTop: "30px",
+                flexWrap: "wrap",
+                gap: "20px",
               }}
             >
               <div>
                 <h2
                   style={{
                     color: "rgb(28, 57, 142)",
-                    fontSize: "30px",
+                    fontSize: "clamp(24px, 3vw, 30px)",
+                    margin: "0 0 5px 0",
                   }}
                 >
                   50k+
@@ -151,6 +156,8 @@ export default function Hero() {
                 <p
                   style={{
                     color: "rgb(74, 85, 121)",
+                    margin: 0,
+                    fontSize: "clamp(14px, 1.5vw, 16px)",
                   }}
                 >
                   book Available
@@ -160,7 +167,8 @@ export default function Hero() {
                 <h2
                   style={{
                     color: "rgb(28, 57, 142)",
-                    fontSize: "30px",
+                    fontSize: "clamp(24px, 3vw, 30px)",
+                    margin: "0 0 5px 0",
                   }}
                 >
                   12K+
@@ -168,6 +176,8 @@ export default function Hero() {
                 <p
                   style={{
                     color: "rgb(74, 85, 121)",
+                    margin: 0,
+                    fontSize: "clamp(14px, 1.5vw, 16px)",
                   }}
                 >
                   Active Members
@@ -177,7 +187,8 @@ export default function Hero() {
                 <h2
                   style={{
                     color: "rgb(28, 57, 142)",
-                    fontSize: "30px",
+                    fontSize: "clamp(24px, 3vw, 30px)",
+                    margin: "0 0 5px 0",
                   }}
                 >
                   99.9%
@@ -185,6 +196,8 @@ export default function Hero() {
                 <p
                   style={{
                     color: "rgb(74, 85, 121)",
+                    margin: 0,
+                    fontSize: "clamp(14px, 1.5vw, 16px)",
                   }}
                 >
                   Uptime
@@ -196,8 +209,10 @@ export default function Hero() {
             <img
               src="public/hero-books-tech.png"
               style={{
-                width: " 600px",
-                height: "590px",
+                width: "100%",
+                maxWidth: "600px",
+                height: "auto",
+                maxHeight: "590px",
                 borderRadius: "20px",
                 objectFit: "cover",
               }}

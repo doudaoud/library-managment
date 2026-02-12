@@ -24,6 +24,78 @@
   cursor: pointer;
 }
 
+/* Responsive Hero Styles */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column !important;
+    gap: 40px !important;
+    text-align: center;
+    width: 95% !important;
+    margin-top: 60px !important;
+  }
+  
+  .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .stats-container {
+    width: 100%;
+    justify-content: space-between !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 90% !important;
+    margin-top: 40px !important;
+    gap: 30px !important;
+  }
+  
+  .stats-container {
+    flex-direction: column !important;
+    gap: 25px !important;
+    align-items: center;
+  }
+  
+  .explore, .getstarted {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto !important;
+    display: block !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    width: 95% !important;
+    padding: 0 15px;
+  }
+  
+  .stats-container div {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .wave {
+    bottom: -300px;
+    height: 400px;
+  }
+}
+
 /* Card Styles for Hero2 */
 .card {
   border: 1px solid rgb(243, 244, 246);
@@ -48,4 +120,13 @@
 
 .card:hover .icon {
   transform: scale(1.1);
+}
+
+/* Additional responsive fixes */
+.header {
+  transition: all 0.3s ease;
+}
+
+.left, .right {
+  transition: all 0.3s ease;
 }

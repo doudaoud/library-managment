@@ -29,7 +29,8 @@ export default function Hero2() {
         <div
           className="titles"
           style={{
-            width: "80%",
+            width: "90%",
+            maxWidth: "1200px",
             margin: "auto",
           }}
         >
@@ -38,8 +39,9 @@ export default function Hero2() {
               color: "rgb(28, 57, 142)",
               fontFamily: "sans-serif",
               fontWeight: "900",
-              fontSize: "50px",
+              fontSize: "clamp(32px, 4vw, 50px)",
               marginBottom: "20px",
+              textAlign: "center",
             }}
           >
             Powerful Features
@@ -47,7 +49,10 @@ export default function Hero2() {
           <p
             style={{
               color: "rgb(74, 85, 101)",
-              fontSize: "18px",
+              fontSize: "clamp(16px, 2vw, 18px)",
+              textAlign: "center",
+              maxWidth: "700px",
+              margin: "0 auto",
             }}
           >
             Everything you need to manage your library efficiently and
@@ -58,11 +63,12 @@ export default function Hero2() {
           className="cards"
           style={{
             marginTop: 105,
-            width: "80%",
+            width: "90%",
+            maxWidth: "1200px",
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            marginRight: "140px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
             gap: 30,
+            margin: "105px auto 0",
           }}
         >
           <Card

@@ -4,7 +4,8 @@ import Hero from "./components/Hero";
 import Hero2 from "./components/Hero2";
 import Popular from "./components/Popular";
 import Explore from "./components/Explore";
-
+import Footer from "./components/Footer";
+import Bynumber from "./components/Bynumber";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,8 @@ export default function Home() {
       {/*fin de header 2  */}
       <Popular />
       <Explore />
+      <Bynumber />
+      <Footer />
     </>
   );
 }
