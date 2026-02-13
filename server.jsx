@@ -27,8 +27,8 @@ app.set("views", "views");
 // });
 
 app.use("/", require("./routes/home"));
-
-app.use("/login", require("./routes/users"));
+app.use("/login", require("./routes/login"));
+app.use("/register", require("./routes/register"));
 
 app.listen(process.env.PORT, async () => {
   try {

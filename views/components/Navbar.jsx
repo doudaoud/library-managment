@@ -24,7 +24,6 @@ export default function Navbar() {
           alignItems: "center",
         }}
       >
-        {/* Logo Section */}
         <div
           className="logo-section"
           style={{
@@ -70,7 +69,6 @@ export default function Navbar() {
           </h3>
         </div>
 
-        {/* Desktop Navigation */}
         <div
           className="nav-links desktop-nav"
           style={{
@@ -78,50 +76,48 @@ export default function Navbar() {
             alignItems: "center",
             gap: 25,
           }}
+        />
+
+        <div
+          className="auth-buttons desktop-auth"
+          style={{ display: "flex", gap: "15px" }}
         >
-          <p>Home</p>
-          <p>Books</p>
-          <p>Categories</p>
-          <p>Members</p>
-          <p>Dashbord</p>
-          <p>Contact</p>
+          <a href="/login" style={{ textDecoration: "none" }}>
+            <button
+              style={{
+                padding: "10px 20px",
+                backgroundColor: "transparent",
+                color: "#344054",
+                border: "none",
+                cursor: "pointer",
+                fontWeight: "bold",
+                fontSize: "16px",
+                borderRadius: "8px",
+                transition: "all 0.3s ease",
+              }}
+            >
+              Login
+            </button>
+          </a>
+          <a href="/register" style={{ textDecoration: "none" }}>
+            <button
+              style={{
+                padding: "10px 20px",
+                backgroundColor: "rgb(139, 32, 237)",
+                color: "white",
+                border: "none",
+                borderRadius: "15px",
+                cursor: "pointer",
+                fontWeight: "bold",
+                fontSize: "16px",
+                transition: "all 0.3s ease",
+              }}
+            >
+              Register
+            </button>
+          </a>
         </div>
 
-        {/* Desktop Auth Buttons */}
-        <div className="auth-buttons desktop-auth" style={{ display: "flex", gap: "15px" }}>
-          <button
-            style={{
-              padding: "10px 20px",
-              backgroundColor: "transparent",
-              color: "#344054",
-              border: "none",
-              cursor: "pointer",
-              fontWeight: "bold",
-              fontSize: "16px",
-              borderRadius: "8px",
-              transition: "all 0.3s ease",
-            }}
-          >
-            Login
-          </button>
-          <button
-            style={{
-              padding: "10px 20px",
-              backgroundColor: "rgb(139, 32, 237)",
-              color: "white",
-              border: "none",
-              borderRadius: "15px",
-              cursor: "pointer",
-              fontWeight: "bold",
-              fontSize: "16px",
-              transition: "all 0.3s ease",
-            }}
-          >
-            Register
-          </button>
-        </div>
-
-        {/* Mobile Menu Button */}
         <button
           className="mobile-menu-btn"
           onClick={toggleMenu}
@@ -143,7 +139,6 @@ export default function Navbar() {
           )}
         </button>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div
             className="mobile-menu"
@@ -175,7 +170,9 @@ export default function Navbar() {
               >
                 <p style={{ padding: "10px 0", fontSize: "18px" }}>Home</p>
                 <p style={{ padding: "10px 0", fontSize: "18px" }}>Books</p>
-                <p style={{ padding: "10px 0", fontSize: "18px" }}>Categories</p>
+                <p style={{ padding: "10px 0", fontSize: "18px" }}>
+                  Categories
+                </p>
                 <p style={{ padding: "10px 0", fontSize: "18px" }}>Members</p>
                 <p style={{ padding: "10px 0", fontSize: "18px" }}>Dashbord</p>
                 <p style={{ padding: "10px 0", fontSize: "18px" }}>Contact</p>
@@ -190,34 +187,40 @@ export default function Navbar() {
                   borderTop: "1px solid #eee",
                 }}
               >
-                <button
-                  style={{
-                    padding: "12px 20px",
-                    backgroundColor: "transparent",
-                    color: "#344054",
-                    border: "2px solid #344054",
-                    cursor: "pointer",
-                    fontWeight: "bold",
-                    fontSize: "16px",
-                    borderRadius: "8px",
-                  }}
-                >
-                  Login
-                </button>
-                <button
-                  style={{
-                    padding: "12px 20px",
-                    backgroundColor: "rgb(139, 32, 237)",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "8px",
-                    cursor: "pointer",
-                    fontWeight: "bold",
-                    fontSize: "16px",
-                  }}
-                >
-                  Register
-                </button>
+                <a href="/login" style={{ textDecoration: "none" }}>
+                  <button
+                    style={{
+                      width: "100%",
+                      padding: "12px 20px",
+                      backgroundColor: "transparent",
+                      color: "#344054",
+                      border: "2px solid #344054",
+                      cursor: "pointer",
+                      fontWeight: "bold",
+                      fontSize: "16px",
+                      borderRadius: "8px",
+                    }}
+                  >
+                    Login
+                  </button>
+                </a>
+                <a href="/register" style={{ textDecoration: "none" }}>
+                  <button
+                    style={{
+                      width: "100%",
+                      padding: "12px 20px",
+                      backgroundColor: "rgb(139, 32, 237)",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "8px",
+                      cursor: "pointer",
+                      fontWeight: "bold",
+                      fontSize: "16px",
+                    }}
+                  >
+                    Register
+                  </button>
+                </a>
               </div>
             </div>
           </div>
