@@ -6,7 +6,7 @@ const sendPage = require("../utils/sendPage");
 import Login from "../views/login";
 
 loginRoute.get(
-  "/",
+  "/login",
   asyncHandler(async (req, res) => {
     sendPage(res, Login());
   }),

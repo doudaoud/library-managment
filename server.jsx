@@ -7,7 +7,11 @@ import Register from "./views/register";
 import { renderToStaticMarkup } from "react-dom/server";
 require("dotenv").config();
 const app = express();
+
 app.use(express.static(path.join(__dirname, "assets")));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 app.set("view engine", "jsx");
 app.set("views", "views");
 
@@ -27,8 +31,8 @@ app.set("views", "views");
 // });
 
 app.use("/", require("./routes/home"));
-app.use("/login", require("./routes/login"));
-app.use("/register", require("./routes/register"));
+app.use("/", require("./routes/login"));
+app.use("/", require("./routes/register"));
 
 app.listen(process.env.PORT, async () => {
   try {
