@@ -14,7 +14,7 @@ loginRoute.get(
 );
 
 loginRoute.post(
-  "/login",
+  "/Login",
   asyncHandler(async (req, res) => {
     const { email, password } = req.body;
 
@@ -32,7 +32,8 @@ loginRoute.post(
     }
 
     console.log("Connexion reussie:", { email });
-    return res.redirect("/");
+    return res.redirect("/location");
+
   }),
 );
 

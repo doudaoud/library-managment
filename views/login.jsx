@@ -81,7 +81,7 @@ export default function Login() {
             Entrez vos identifiants pour acceder a votre compte
           </p>
 
-          <form action="/login" method="POST">
+          <form action="/Login" method="POST">
             <div style={{ marginBottom: "16px" }}>
               <label htmlFor="email" style={labelStyle}>
                 Adresse email
