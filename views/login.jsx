@@ -1,42 +1,170 @@
-import React from 'react'
+import React from "react";
 
 export default function Login() {
+  const pageStyle = {
+    minHeight: "100vh",
+    margin: 0,
+    backgroundColor: "#f5f6f8",
+    fontFamily: "Georgia, serif",
+    color: "#111827",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "32px 16px",
+    boxSizing: "border-box",
+  };
+
+  const cardStyle = {
+    width: "100%",
+    maxWidth: "420px",
+  };
+
+  const panelStyle = {
+    backgroundColor: "#ffffff",
+    border: "1px solid #d1d5db",
+    borderRadius: "10px",
+    padding: "24px",
+  };
+
+  const labelStyle = {
+    display: "block",
+    fontSize: "14px",
+    fontWeight: 600,
+    marginBottom: "8px",
+    color: "#111827",
+  };
+
+  const inputStyle = {
+    width: "100%",
+    padding: "10px 12px",
+    borderRadius: "7px",
+    border: "1px solid #d1d5db",
+    boxSizing: "border-box",
+    fontSize: "14px",
+    outline: "none",
+  };
+
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#f4f4f9', minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <div style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '10px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', width: '100%', maxWidth: '400px' }}>
-        <h1 style={{ textAlign: 'center', color: '#2c3e50', marginBottom: '30px' }}>Connexion</h1>
-        <form action="/login" method="POST">
-          <div style={{ marginBottom: '20px' }}>
-            <label htmlFor="email" style={{ display: 'block', marginBottom: '8px', color: '#555' }}>Adresse Email</label>
-            <input 
-              type="email" 
-              id="email" 
-              name="email" 
-              required 
-              style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', boxSizing: 'border-box' }} 
-            />
-          </div>
-          <div style={{ marginBottom: '25px' }}>
-            <label htmlFor="password" style={{ display: 'block', marginBottom: '8px', color: '#555' }}>Mot de passe</label>
-            <input 
-              type="password" 
-              id="password" 
-              name="password" 
-              required 
-              style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', boxSizing: 'border-box' }} 
-            />
-          </div>
-          <button 
-            type="submit" 
-            style={{ width: '100%', padding: '12px', backgroundColor: '#3498db', color: '#fff', border: 'none', borderRadius: '5px', fontSize: '16px', cursor: 'pointer', fontWeight: 'bold' }}
+    <div style={pageStyle}>
+      <div style={cardStyle}>
+        <div style={{ textAlign: "center", marginBottom: "22px" }}>
+          <div
+            style={{
+              width: "48px",
+              height: "48px",
+              margin: "0 auto 12px auto",
+              borderRadius: "10px",
+              backgroundColor: "#0b4ea2",
+              color: "#ffffff",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontWeight: 700,
+              fontSize: "22px",
+            }}
           >
-            Se connecter
-          </button>
-        </form>
-        <div style={{ marginTop: '20px', textAlign: 'center' }}>
-            <a href="/" style={{ color: '#7f8c8d', textDecoration: 'none', fontSize: '0.9rem' }}>Retour à l'accueil</a>
+            B
+          </div>
+          <h1 style={{ margin: 0, fontSize: "44px", fontWeight: 700 }}>
+            Gestion de Bibliotheque
+          </h1>
+          <p style={{ margin: "8px 0 0 0", color: "#6b7280", fontSize: "16px" }}>
+            Connectez-vous a votre compte
+          </p>
         </div>
+
+        <div style={panelStyle}>
+          <h2 style={{ margin: "0 0 8px 0", fontSize: "40px", fontWeight: 700 }}>
+            Connexion
+          </h2>
+          <p style={{ margin: "0 0 22px 0", color: "#6b7280", fontSize: "14px" }}>
+            Entrez vos identifiants pour acceder a votre compte
+          </p>
+
+          <form action="/login" method="POST">
+            <div style={{ marginBottom: "16px" }}>
+              <label htmlFor="email" style={labelStyle}>
+                Adresse email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="vous@exemple.com"
+                required
+                style={inputStyle}
+              />
+            </div>
+
+            <div style={{ marginBottom: "20px" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginBottom: "8px",
+                }}
+              >
+                <label htmlFor="password" style={{ ...labelStyle, marginBottom: 0 }}>
+                  Mot de passe
+                </label>
+                <a
+                  href="#"
+                  style={{ color: "#0b4ea2", textDecoration: "none", fontSize: "14px" }}
+                >
+                  Mot de passe oublie ?
+                </a>
+              </div>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="********"
+                required
+                style={inputStyle}
+              />
+            </div>
+
+            <button
+              type="submit"
+              style={{
+                width: "100%",
+                border: "none",
+                borderRadius: "7px",
+                padding: "12px",
+                cursor: "pointer",
+                backgroundColor: "#0b4ea2",
+                color: "#ffffff",
+                fontWeight: 700,
+                fontSize: "15px",
+              }}
+            >
+              Se connecter
+            </button>
+          </form>
+
+          <p style={{ textAlign: "center", margin: "16px 0 0 0", color: "#6b7280" }}>
+            Pas encore de compte ?{" "}
+            <a
+              href="/register"
+              style={{ color: "#0b4ea2", textDecoration: "none", fontWeight: 700 }}
+            >
+              S'inscrire
+            </a>
+          </p>
+        </div>
+
+        <p
+          style={{
+            textAlign: "center",
+            margin: "14px 0 0 0",
+            color: "#6b7280",
+            fontSize: "12px",
+          }}
+        >
+          (c) 2026 Gestion de Bibliotheque. Tous droits reserves.
+        </p>
       </div>
     </div>
-  )
+  );
 }
