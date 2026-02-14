@@ -2,6 +2,7 @@ const express = require("express");
 import React from "react";
 const mongoose = require("mongoose");
 const path = require("path");
+const session = require("express-session");
 import Login from "./views/login";
 import Register from "./views/register";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -11,6 +12,17 @@ const app = express();
 app.use(express.static(path.join(__dirname, "assets")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET || "library-dev-secret",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      maxAge: 1000 * 60 * 60 * 24,
+    },
+  }),
+);
 
 app.set("view engine", "jsx");
 app.set("views", "views");

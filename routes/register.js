@@ -1,6 +1,7 @@
 const express = require("express");
 const asyncHandler = require("express-async-handler");
 const registerRoute = express.Router();
+const bcrypt = require("bcrypt");
 require("dotenv").config();
 const sendPage = require("../utils/sendPage");
 import Register from "../views/register";
@@ -36,13 +37,14 @@ registerRoute.post(
       lastName,
       email,
       passwordLength: password.length,
-    });
-
+    });;
+    let hachedPassword = await bcrypt.hash(password, 10);
+   
     let newUser = new User({
       pname: firstName,
       name:lastName, 
       email,
-      password,
+      password: hachedPassword,
     });
     newUser.save();
     return res.redirect("/login");
