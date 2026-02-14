@@ -46,6 +46,7 @@ app.use("/", require("./routes/home"));
 app.use("/", require("./routes/login"));
 app.use("/", require("./routes/register"));
 app.use("/", require("./routes/location"));
+app.use("/", require("./routes/profile"));
 app.listen(process.env.PORT, async () => {
   try {
     await mongoose.connect(process.env.URL);
